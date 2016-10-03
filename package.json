@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Andrea Paciolla <andrea.paciolla@objectway.it>",
+  "author": "Andrea Paciolla",
   "license": "MIT",
   "dependencies": { 
   	"spawn-command" : "~0.0.2-1",
