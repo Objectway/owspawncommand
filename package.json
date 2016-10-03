@@ -1,6 +1,6 @@
 {
   "name": "owspawncommand",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Wrapper for standard executer with promises",
   "main": "index.js",
   "scripts": {
