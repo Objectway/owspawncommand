@@ -1,6 +1,6 @@
 {
   "name": "owspawncommand",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Wrapper for standard executer with promises",
   "main": "index.js",
   "scripts": {
@@ -8,9 +8,9 @@
   },
   "author": "Andrea Paciolla",
   "license": "MIT",
-  "dependencies": { 
-  	"spawn-command" : "~0.0.2-1",
-  	"gulp-util" : "~3.0.5", 
-  	"q" : "~1.4.1"
+  "dependencies": {
+    "spawn-command": "~0.0.2-1",
+    "gulp-util": "~3.0.5",
+    "q": "~1.4.1"
   }
 }
