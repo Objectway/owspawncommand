@@ -4,13 +4,12 @@ const Q = require('q');
 const spawnCommand = require('spawn-command');
 const gutil = require('gulp-util');
 
-module.exports = function (command) {
-  let deferred = Q.defer()
-    , cmd
-    , cmdOutput = ''
-    ;
+module.exports = function (command, directory) {
+  const deferred = Q.defer();
+  const cmd;
+  const cmdOutput = '';
 
-  cmd = spawnCommand(command);
+  cmd = spawnCommand(command, {cwd: directory || __dirname});
 
   cmd.stdout.on('data', function (data) {
     cmdOutput += data.toString('utf8');
