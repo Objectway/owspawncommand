@@ -5,9 +5,9 @@ const spawnCommand = require('spawn-command');
 const gutil = require('gulp-util');
 
 module.exports = function (command, directory) {
-  const deferred = Q.defer();
-  const cmd;
-  const cmdOutput = '';
+  let deferred = Q.defer();
+  let cmd;
+  let cmdOutput = '';
 
   cmd = spawnCommand(command, {cwd: directory || __dirname});
 
