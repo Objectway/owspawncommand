@@ -9,7 +9,7 @@ module.exports = function (command, directory) {
   let cmd;
   let cmdOutput = '';
 
-  cmd = spawnCommand(command, {cwd: directory || __dirname});
+  cmd = spawnCommand(command, {cwd: directory || process.cwd()});
 
   cmd.stdout.on('data', function (data) {
     cmdOutput += data.toString('utf8');
